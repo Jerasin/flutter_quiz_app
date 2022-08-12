@@ -84,6 +84,25 @@ class _MyAppState extends State<MyApp> {
                         fn: _answerQuestion,
                         index: _index,
                       )
+                      // Question(
+                      //     questionText:
+                      //         questions[_index]['questionText']?.toString(),
+                      //     color: Colors.teal,
+                      //     fontSize: 22),
+                      // ...(questions[_index]['answers'] as List<String>)
+                      //     .map((item) =>
+                      //         Answer(label: item, fn: _answerQuestion))
+                      //     .toList()
+
+                      // Answer(label: 'Answer1', fn: _answerQuestion),
+                      // Answer(label: 'Answer2', fn: _answerQuestion),
+                      // Answer(label: 'Answer3', fn: _answerQuestion),
+                      //   ElevatedButton(
+                      //       onPressed: _answerQuestion, child: const Text('Answer1')),
+                      //   ElevatedButton(
+                      //       onPressed: _answerQuestion, child: const Text('Answer2')),
+                      //   ElevatedButton(
+                      //       onPressed: _answerQuestion, child: const Text('Answer3'))
                     ])
               : Result(totalScore: _totalScore, resetScore: _resetScore)),
     );
