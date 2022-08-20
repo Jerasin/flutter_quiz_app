@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import './quiz.dart';
 import './result.dart';
 
-// void main() {
-//   runApp(MyApp());
-// }
-
 void main() => (runApp(MyApp()));
 
 class MyApp extends StatefulWidget {
@@ -39,32 +35,15 @@ class _MyAppState extends State<MyApp> {
 
   var _index = 0;
   var _totalScore = 0;
-  // void _answerQuestion() {
-  //   print('this is answer');
-  // }
+
   void _answerQuestion(int score) => ({
         _totalScore += score,
-
-        // print(_total);
-
-        setState(() => {
-              // if (_index < questions.length - 1)
-              //   {_index = _index + 1}
-              // else
-              //   {_index = 0}
-              _index += 1
-            })
+        setState(() => {_index += 1})
       });
 
   void _resetScore() => ({
         _totalScore = 0,
-        setState(() => {
-              // if (_index < questions.length - 1)
-              //   {_index = _index + 1}
-              // else
-              //   {_index = 0}
-              _index = 0
-            })
+        setState(() => {_index = 0})
       });
 
   @override
