@@ -16,14 +16,7 @@ class Answer extends StatelessWidget {
       width: double.infinity,
       margin: const EdgeInsets.all(8.0),
       child: ElevatedButton(
-          // Option 1
-          style: ElevatedButton.styleFrom(
-              primary: Colors.cyan, onPrimary: Colors.black),
-          // Option 2
-          // style: ButtonStyle(
-          //   backgroundColor: MaterialStateProperty.all(Colors.red),
-          //   foregroundColor: MaterialStateProperty.all(Colors.black),
-          // ),
+          style: ElevatedButton.styleFrom(primary: Colors.deepPurple),
           onPressed: fn,
           child: Text(label)),
     );
