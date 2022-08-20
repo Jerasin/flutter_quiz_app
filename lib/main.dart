@@ -59,7 +59,7 @@ class _MyAppState extends State<MyApp> {
                   children: <Widget>[
                       Quiz(
                         questions: questions,
-                        color: Colors.amberAccent,
+                        color: Colors.teal,
                         fn: _answerQuestion,
                         index: _index,
                       )
