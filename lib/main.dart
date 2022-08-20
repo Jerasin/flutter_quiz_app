@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
       'answers': [
         {'text': 'Cat', 'score': 10},
         {'text': 'Dog', 'score': 20},
-        {'text': 'Bird', 'score': 15},
+        {'text': 'Bird', 'score': 30},
         {'text': 'Lion', 'score': 15},
       ],
     }

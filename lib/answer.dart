@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import './_widget/button/elevated_button.dart';
+import './_widget/button/text_button.dart';
+import './_widget/button/outlined_button.dart';
 
 class Answer extends StatelessWidget {
   final String label;
@@ -12,13 +15,15 @@ class Answer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      margin: const EdgeInsets.all(8.0),
-      child: ElevatedButton(
-          style: ElevatedButton.styleFrom(primary: Colors.deepPurple),
-          onPressed: fn,
-          child: Text(label)),
+    // return MakeElevatedButton(label: label, fn: fn);
+
+    return Column(
+      children: [
+        // Text button have not background Color
+        MakeTextButton(label: label, fn: fn),
+        MakeElevatedButton(label: label, fn: fn),
+        MakeOutLinedButton(label: label, fn: fn),
+      ],
     );
   }
 }
